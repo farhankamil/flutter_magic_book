@@ -9,10 +9,10 @@ class ELogin1View extends StatefulWidget {
     controller.view = this;
 
     return Scaffold(
-      // appBar: AppBar(
-      //   title: const Text("ELogin1"),
-      //   actions: const [],
-      // ),
+      appBar: AppBar(
+        title: const Text("ELogin1"),
+        actions: const [],
+      ),
       body: SingleChildScrollView(
         child: Container(
           height: MediaQuery.of(context).size.height,
@@ -107,7 +107,7 @@ class ELogin1View extends StatefulWidget {
                 ),
               ),
               const SizedBox(
-                height: 15,
+                height: 35,
               ),
             ],
           ),

@@ -11,16 +11,20 @@ class FbkDartSymbolView extends StatefulWidget {
     //Error-nya disebabkan karena kurang ;
     //Tambahkan titik koma pada bagian kode yang error
     List products = [];
-    /*
+
     products = [
       "GG FILTER 12",
       "JR SUPER 12",
       "GULA LAKU",
+      2,
     ];
-    for (var product in products) {
-      print(product)
+    // for (var product in products) {
+    //   print(product);
+    // }
+    for (var i = 0; i < products.length; i++) {
+      print("${i + 1}. ${products[i]}");
     }
-    */
+
     return products.isNotEmpty;
   }
 
@@ -29,56 +33,54 @@ class FbkDartSymbolView extends StatefulWidget {
     //Error-nya disebabkan karena kurang ,
     //Tambahkan , pada bagian kode yang error
     List products = [];
-    /*
+
     products = [
-      "GG FILTER 12"
-      "JR SUPER 12"
+      "GG FILTER 12",
+      "JR SUPER 12",
       "GULA LAKU",
     ];
     for (var product in products) {
       print(product);
     }
-    */
+
     return products.isNotEmpty;
   }
 
   bool? exercise3() {
     //Uncomment kode di bawah ini
-    //Error-nya disebabkan karena kurang }
-    //Tambahkan } pada bagian kode yang error
+    //Error-nya disebabkan karena kurang
+    //Tambahkan  pada bagian kode yang error
     int qty = 2;
     double price = 25;
     double total = qty * price;
     double discount = 0;
 
-    /*
     if (total >= 50) {
       discount = 0.25;
-    else {
+    } else {
       discount = 0.10;
     }
-    */
 
     return discount == 0.25;
   }
 
   bool? exercise4() {
     //Uncomment kode di bawah ini
-    //Error-nya disebabkan karena kurang } dan ;
-    //Tambahkan } dan ; pada bagian kode yang error
+    //Error-nya disebabkan karena kurang  dan ;
+    //Tambahkan  dan ; pada bagian kode yang error
     int qty = 4;
     double price = 25;
     double total = qty * price;
     double discount = 0;
 
-    /*
     if (total >= 100) {
       discount = 0.35;
-     else if (total >= 50) {
-      discount = 0.25
+    } else if (total >= 50) {
+      discount = 0.25;
     } else {
       discount = 0.10;
-    */
+    }
+    print(discount);
 
     return discount == 0.35;
   }
@@ -91,13 +93,15 @@ class FbkDartSymbolView extends StatefulWidget {
 
     List productCategories = [];
 
-    /*
-    productCategories = {
+    productCategories = [
       "GG FILTER",
       "JR SUPER 12",
-      "SUSU DANCOW",
-    };
-    */
+      "SUSU DANCO",
+    ];
+    for (var product in productCategories) {
+      print(product);
+    }
+    print(productCategories);
     return productCategories.isNotEmpty;
   }
 
@@ -108,13 +112,11 @@ class FbkDartSymbolView extends StatefulWidget {
 
     List productCategories = [];
 
-    /*
     productCategories = [
-      "GG FILTER",,
+      "GG FILTER",
       "JR SUPER 12",
       "SUSU DANCOW",
-    ],;,
-    */
+    ];
 
     return productCategories.isNotEmpty;
   }
@@ -124,10 +126,11 @@ class FbkDartSymbolView extends StatefulWidget {
     //Perbaiki error dibawah!
 
     List productCategories = [];
-    /*
-    if (productCategories.isEmpty {
-      productCategories.add("TEH GELAS OT")
-    */
+
+    if (productCategories.isEmpty) {
+      productCategories.add("TEH GELAS OT");
+    }
+    print(productCategories);
     return productCategories.isNotEmpty;
   }
 
@@ -136,15 +139,14 @@ class FbkDartSymbolView extends StatefulWidget {
     //Perbaiki error dibawah!
 
     List customers = [];
-    /*
-    Map product = [
+
+    Map<String, dynamic> product = {
       "id": 1,
       "product_name": "TEH GELAS OT",
-      "price": 25,,
-    ];
+      "price": 25,
+    };
     customers.add(product);
-    */
-
+    print(product);
     return customers.isNotEmpty;
   }
 
@@ -153,16 +155,16 @@ class FbkDartSymbolView extends StatefulWidget {
     //Perbaiki error dibawah!
 
     List arr = [];
-    /*
+
     for (var i = 0; i < 10; i++) {
       String str = "";
       for (var n = 0; n <= i; n++) {
-        str += "*",
-      
-      print(str),
-      arr.add(str);
+        str += "*";
+
+        print(str);
+        arr.add(str);
+      }
     }
-    */
     return arr.isNotEmpty;
   }
 
@@ -171,20 +173,20 @@ class FbkDartSymbolView extends StatefulWidget {
     //Perbaiki error dibawah!
 
     List arr = [];
-    /*
-    for var i = 0; i < 10; i++) {
+
+    for (var i = 0; i < 10; i++) {
       String str = "";
-      for (var n = 0;; n <= i; n++) {
-        if (n % 2 == 0 {
+      for (var n = 0; n <= i; n++) {
+        if (n % 2 == 0) {
           str += "~";
         } else {
           str += "*";
         }
-      
-      print(str);
-      arr.add(str);
+
+        print(str);
+        arr.add(str);
+      }
     }
-    */
     return arr.isNotEmpty;
   }
 
